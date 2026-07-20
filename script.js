@@ -37,26 +37,30 @@ document.addEventListener("DOMContentLoaded", () => {
   if (navToggle && navlinks) {
     navToggle.addEventListener("click", () => {
       navlinks.classList.toggle("open");
+      navlinks.classList.toggle("show"); // Menyokong kedua-dua class responsive anda
     });
 
     navlinks.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
         navlinks.classList.remove("open");
+        navlinks.classList.remove("show");
       });
     });
   }
 
   // ==========================================
-  // 4. THEME TOGGLE (DARK / LIGHT MODE)
+  // 4. THEME TOGGLE (DARK / LIGHT MODE) - FIXED!
   // ==========================================
   const themeToggle = document.getElementById("themeToggle");
   const body = document.body;
 
   if (themeToggle) {
     themeToggle.addEventListener("click", () => {
-      body.classList.toggle("dark-theme");
-      const isDark = body.classList.contains("dark-theme");
-      themeToggle.textContent = isDark ? "☀️" : "🌙";
+      // Ditukar ke 'light' supaya sepadan sepenuhnya dengan body.light di style.css
+      body.classList.toggle("light");
+      
+      const isLight = body.classList.contains("light");
+      themeToggle.textContent = isLight ? "☀️" : "🌙";
     });
   }
 
@@ -265,6 +269,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (modal && modalContent && projectDetails[key]) {
         modalContent.innerHTML = projectDetails[key];
         modal.classList.add("active");
+        modal.classList.add("show"); // Menyokong .show dan .active untuk keselamatan
       }
     });
   });
@@ -273,11 +278,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (modalClose && modal) {
     modalClose.addEventListener("click", () => {
       modal.classList.remove("active");
+      modal.classList.remove("show");
     });
 
     window.addEventListener("click", (e) => {
       if (e.target === modal) {
         modal.classList.remove("active");
+        modal.classList.remove("show");
       }
     });
   }
