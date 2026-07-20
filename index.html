@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nur Ezy Fathia | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="logo">Portfolio</div>
+
+    <nav class="navlinks" id="navlinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#credentials">Awards & Certs</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <section id="home" class="section hero">
+    <div class="hero-left reveal-card is-in">
+      <p class="kicker micro">Hello, It's Me</p>
+      <h1 class="micro">Nur Ezy Fathia Edy Safaris</h1>
+
+      <h2 class="micro">
+        I build as a <span class="accent" id="typing"></span><span class="cursor">|</span>
+      </h2>
+
+      <p class="lead micro">
+        Data Science specialist with hands-on experience in machine learning pipelines, predictive analytics, and real-time data engineering solutions.
+      </p>
+
+      <div class="hero-actions micro">
+        <a class="btn magnetic" href="#projects">View Projects</a>
+        <a class="btn btn-ghost magnetic" href="#contact">Contact Me</a>
+      </div>
+
+      <div class="mini micro">
+        <span class="pill">Python / PySpark</span>
+        <span class="pill">SQL & Snowflake</span>
+        <span class="pill">Kafka & Apache Spark</span>
+        <span class="pill">RAG & LlamaIndex</span>
+        <span class="pill">Tableau & PowerBI</span>
+      </div>
+
+      <div class="stats micro">
+        <div class="stat">
+          <div class="stat-num">3.30</div>
+          <div class="stat-label">AIU CGPA (Data Science)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">80%</div>
+          <div class="stat-label">Time Saved (ELAS)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100+</div>
+          <div class="stat-label">Staff Supported</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="glow-ring float">
+        <img src="assets/profile.jpg" alt="Nur Ezy Fathia profile photo" />
+      </div>
+
+      <div class="small-note reveal-card">
+        <div class="note-title">Highlights</div>
+        <ul>
+          <li>Data Engineer Intern at Mandrill Tech working on PySpark & Kafka pipelines</li>
+          <li>Built enterprise AI Chatbot using RAG and LlamaIndex</li>
+          <li>Developed Employee Learning System (ELAS) used by 100+ staff</li>
+          <li>Built multivariate ML models to forecast car sales trends</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="section-title">
+      <h3>About <span class="accent">Me</span></h3>
+      <p>A quick overview of my background, experience, and what I bring as a data professional.</p>
+    </div>
+
+    <div class="card reveal-card">
+      <p class="muted small" style="margin-bottom:12px;">
+        I am an emerging data professional with practical experience across Data Engineering, Data Operations, and Predictive Analytics.
+      </p>
+      <ul class="bullets micro">
+        <li>Bachelor of Computer Science (Hons) - Major in Data Science student at Albukhary International University (CGPA: 3.30).</li>
+        <li>Experienced in building real-time data streaming pipelines using Apache Spark, PySpark, and Kafka.</li>
+        <li>Managed large enterprise datasets in Snowflake, enforcing strict data quality, cleansing, and validation checks.</li>
+        <li>Skilled in developing AI-powered solutions using Retrieval-Augmented Generation (RAG) and LlamaIndex.</li>
+        <li>Strong problem-solving skills with experience authoring technical documentation and SLAs for enterprise proposals.</li>
+      </ul>
+
+      <div class="about-buttons micro">
+        <button class="btn btn-ghost magnetic" type="button" data-about="edu">Education</button>
+        <button class="btn btn-ghost magnetic" type="button" data-about="lang">Languages & Communication</button>
+      </div>
+
+      <div id="aboutBox" class="about-box micro">
+        Select a category above to view more details about my background.
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="section-title">
+      <h3>My <span class="accent">Skills</span></h3>
+      <p>Technologies and strengths I use to build real-world data pipelines and analytics solutions.</p>
+    </div>
+
+    <div class="grid-2">
+
+      <div class="card reveal-card">
+        <h4 class="micro">Technical Skills</h4>
+
+        <p class="muted small">
+          I build scalable data pipelines using PySpark and Kafka, manage cloud databases with Snowflake, and deploy predictive ML models and RAG applications in Python.
+        </p>
+
+        <p class="muted small micro" style="margin-top:18px"><strong>Strong in:</strong></p>
+        <div class="mini micro">
+          <span class="pill">Python</span>
+          <span class="pill">SQL</span>
+          <span class="pill">PySpark</span>
+          <span class="pill">Snowflake</span>
+          <span class="pill">ETL Pipelines</span>
+          <span class="pill">RAG / LlamaIndex</span>
+        </div>
+
+        <p class="muted small micro" style="margin-top:18px"><strong>Programming Languages:</strong></p>
+        <div class="mini micro">
+          <span class="pill">Python</span>
+          <span class="pill">SQL</span>
+          <span class="pill">PHP</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">C++</span>
+          <span class="pill">HTML</span>
+        </div>
+
+        <p class="muted small micro" style="margin-top:18px"><strong>Frameworks, Data Eng & Analytics:</strong></p>
+        <div class="mini micro">
+          <span class="pill">Apache Spark</span>
+          <span class="pill">PySpark</span>
+          <span class="pill">Kafka</span>
+          <span class="pill">Snowflake</span>
+          <span class="pill">Pandas</span>
+          <span class="pill">NumPy</span>
+          <span class="pill">LlamaIndex</span>
+        </div>
+
+        <p class="muted small micro" style="margin-top:18px"><strong>Databases:</strong></p>
+        <div class="mini micro">
+          <span class="pill">Snowflake</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">MySQL</span>
+          <span class="pill">Vector Store</span>
+        </div>
+
+        <p class="muted small micro" style="margin-top:18px"><strong>Tools & Cloud:</strong></p>
+        <div class="mini micro">
+          <span class="pill">Tableau</span>
+          <span class="pill">Power BI</span>
+          <span class="pill">GCP</span>
+          <span class="pill">Docker</span>
+          <span class="pill">Git</span>
+          <span class="pill">Advanced Excel</span>
+          <span class="pill">Matplotlib / Seaborn</span>
+        </div>
+      </div>
+
+      <div class="card reveal-card">
+        <h4 class="micro">Professional Strengths</h4>
+
+        <div class="mini micro">
+          <span class="pill">Problem Solving</span>
+          <span class="pill">Leadership</span>
+          <span class="pill">Technical Documentation</span>
+          <span class="pill">Data Cleansing & Validation</span>
+          <span class="pill">Adaptability</span>
+          <span class="pill">Cross-Functional Communication</span>
+        </div>
+
+        <div class="soft-extra micro">
+          <h5>Extra Strengths</h5>
+          <ul class="bullets small">
+            <li>Authored enterprise technical documentation and SLAs for proposals</li>
+            <li>Conducted robustness testing and compiled full PoC documentation</li>
+            <li>Managed and validated inventory datasets for strict data quality</li>
+            <li>Clear technical communication between engineering and business stakeholders</li>
+            <li>Fast learner capable of adopting new big data and AI frameworks rapidly</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="section-title">
+      <h3>Experience <span class="accent">& Internship</span></h3>
+      <p>Hands-on experience in data engineering, predictive modeling, and data operations.</p>
+    </div>
+
+    <div class="card reveal-card" style="margin-bottom: 20px;">
+      <h4 class="micro">
+        Data Engineer Intern<br/>
+        <span class="muted small">Mandrill Tech — Shah Alam, Selangor</span>
+      </h4>
+      <p class="muted micro">April 2026 – Present</p>
+      <p class="accent small">✔ Production Data Streaming, ML Forecasting & Enterprise PoCs</p>
+      <ul class="bullets micro">
+        <li>Built and optimized real-time data pipelines using Apache Spark, PySpark, and Kafka.</li>
+        <li>Managed large datasets in Snowflake and performed data quality, cleansing, and validation checks.</li>
+        <li>Built and evaluated multivariate machine learning forecasting models to predict BMW sales trends from historical data.</li>
+        <li>Developed an enterprise FAQ AI Chatbot using Retrieval-Augmented Generation (RAG) and LlamaIndex.</li>
+        <li>Authored technical documentation and SLAs for enterprise proposals to standardize operational workflows.</li>
+      </ul>
+    </div>
+
+    <div class="card reveal-card">
+      <h4 class="micro">
+        Data & Sales Analyst / Graphic Designer<br/>
+        <span class="muted small">Offense Media & Graphic</span>
+      </h4>
+      <p class="muted micro">May 2023 – January 2024</p>
+      <p class="accent small">✔ Inventory Quality Control & Customer Trend Analytics</p>
+      <ul class="bullets micro">
+        <li>Managed, reformatted, and validated inventory datasets to ensure high data quality and accuracy.</li>
+        <li>Analyzed historical purchasing and customer trends using Advanced Excel to drive sales targets.</li>
+        <li>Identified process gaps and coordinated with cross-functional teams to resolve data queries in a timely manner.</li>
+        <li>Created high-fidelity mockups and data visualizations to accurately interpret business requirements.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="credentials" class="section">
+    <div class="section-title">
+      <h3>Awards <span class="accent">&</span> Certifications</h3>
+      <p>Certifications and achievements that demonstrate my technical and academic capabilities.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card reveal-card">
+        <h4 class="micro">Certifications</h4>
+        <p class="muted small">
+          Industry-recognized badges and professional credentials in cloud and programming.
+        </p>
+        <ul class="bullets micro">
+          <li>Google Cloud Skill Badges</li>
+          <li>PCEP – Certified Entry-Level Python Programmer (In Progress)</li>
+          <li>CompTIA Cloud+ (Expected Completion: Jan 2027)</li>
+        </ul>
+      </div>
+
+      <div class="card reveal-card">
+        <h4 class="micro">Awards & Honors</h4>
+        <p class="muted small">
+          Academic achievements and awards from competition and coursework excellence.
+        </p>
+        <ul class="bullets micro">
+          <li>
+            <strong>Albukhary International University Dean's List Award</strong>
+            <ul class="small bullets micro">
+              <li>Awarded consistently across academic terms (2024–2026)</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Best Projects Poster Award</strong>
+            <ul class="small bullets micro">
+              <li>Albukhary International University (2023)</li>
+            </ul>
+          </li>
+          <li>
+            <strong>First Class Honours Dean Scholarship Award (JPA)</strong>
+            <ul class="small bullets micro">
+              <li>Management & Science University (2022)</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Best Student Award – Computer Science Award</strong>
+            <ul class="small bullets micro">
+              <li>Management & Science University (2021)</li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="award-actions micro">
+          <button class="btn btn-ghost magnetic" data-award="awards">View Details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-title">
+      <h3>Featured <span class="accent">Projects</span></h3>
+      <p>Selected projects that highlight my experience in data pipelines, machine learning, and AI search platforms.</p>
+    </div>
+
+    <div class="grid-3">
+      <article class="project card project-neo tilt reveal-card">
+        <div class="project-head micro">
+          <h4>FAQ AI Chatbot (PoC)</h4>
+          <span class="tag">Python • LlamaIndex • RAG</span>
+        </div>
+        <p class="muted micro">
+          Built a Retrieval-Augmented Generation (RAG) chatbot for public sector FAQ data. Features vector store indexing, custom query engine, admin portal, and email alerts.
+        </p>
+        <button class="btn btn-ghost magnetic micro" data-modal="rag-chatbot">View Details</button>
+      </article>
+
+      <article class="project card project-neo tilt reveal-card">
+        <div class="project-head micro">
+          <h4>Car Sales Forecasting</h4>
+          <span class="tag">Python • Machine Learning • Tableau</span>
+        </div>
+        <p class="muted micro">
+          Built and evaluated multivariate time-series models on historical vehicle sales (2010–2024) utilizing feature engineering and lag variables to improve predictions.
+        </p>
+        <button class="btn btn-ghost magnetic micro" data-modal="car-sales">View Details</button>
+      </article>
+
+      <article class="project card project-neo tilt reveal-card">
+        <div class="project-head micro">
+          <h4>PnL Financial Dashboard</h4>
+          <span class="tag">Angular 17 • D3.js • PostgreSQL</span>
+        </div>
+        <p class="muted micro">
+          Full-stack financial analytics dashboard rendering real-time profit & loss metrics across regions, equipped with relational schema and custom D3.js charts.
+        </p>
+        <button class="btn btn-ghost magnetic micro" data-modal="pnl-dashboard">View Details</button>
+      </article>
+
+      <article class="project card project-neo tilt reveal-card">
+        <div class="project-head micro">
+          <h4>Employee Learning (ELAS)</h4>
+          <span class="tag">Web Architecture • CPE Logic</span>
+        </div>
+        <p class="muted micro">
+          Centralized platform replacing spreadsheet tracking for 100+ employees. Automated CPE point calculation logic, reducing processing time by 80%.
+        </p>
+        <button class="btn btn-ghost magnetic micro" data-modal="elas">View Details</button>
+      </article>
+    </div>
+
+    <div class="section-title" style="margin-top:34px">
+      <h3>Why <span class="accent">Hire Me</span>?</h3>
+      <p>Key highlights that make me a strong data candidate.</p>
+    </div>
+
+    <div class="card reveal-card">
+      <p>
+        A goal-oriented Data Science student with hands-on experience in production data engineering, enterprise RAG development, and predictive modeling.
+      </p>
+
+      <ul class="bullets micro">
+        <li>Experience building real-time data pipelines using Apache Spark, PySpark, and Kafka</li>
+        <li>Managed large-scale enterprise datasets in Snowflake with automated quality and validation checks</li>
+        <li>Built multivariate machine learning models and AI chatbots using Retrieval-Augmented Generation (RAG)</li>
+        <li>Proven capability in developing web architectures that reduce operational data processing times by 80%</li>
+        <li>Authored technical documentation, proposals, and SLAs for enterprise-level projects</li>
+        <li>Fluent bilingual communicator in both English and Malay</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section-title">
+      <h3>Contact <span class="accent">Me</span></h3>
+      <p class="muted">
+        Actively seeking Data Engineer, Data Analyst, and Data Scientist opportunities starting late 2026.
+      </p>
+    </div>
+
+    <div class="card reveal-card">
+
+      <p class="micro" style="margin-top:10px;"><strong>Email:</strong>
+        <a href="mailto:nurezyfathia@gmail.com">
+          nurezyfathia@gmail.com
+        </a>
+      </p>
+
+      <p class="micro" style="margin-top:10px;"><strong>Phone:</strong>
+        <a href="tel:+60147168223">+60 14-716 8223</a>
+      </p>
+
+      <p class="micro" style="margin-top:10px;"><strong>Location:</strong>
+        <span>Jenjarom, Selangor, Malaysia</span>
+      </p>
+
+      <p class="micro" style="margin-top:10px;"><strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/ezy-fathia-854548262" target="_blank" rel="noreferrer">
+          linkedin.com/in/ezy-fathia-854548262
+        </a>
+      </p>
+
+      <p class="micro" style="margin-top:10px;"><strong>GitHub:</strong>
+        <a href="https://github.com/nurezyfathia-ezy" target="_blank" rel="noreferrer">
+          github.com/nurezyfathia-ezy
+        </a>
+      </p>
+
+      <p class="micro" style="margin-top:10px;"><strong>Resume:</strong>
+        <a href="assets/NUR EZY FATHIA EDY SAFARIS_RESUME 2026.pdf" download class="resume-btn">
+          📄 Download Resume
+        </a>
+      </p>
+
+      <p class="muted small" style="margin-top:14px;">
+        I’m available for interviews and discuss upcoming roles. Let’s connect!
+      </p>
+
+      <p class="muted small" style="margin-top:16px;">
+        <strong>Open to roles:</strong>
+      </p>
+
+      <div class="mini micro">
+        <span class="pill">Data Engineer</span>
+        <span class="pill">Data Analyst</span>
+        <span class="pill">Data Scientist</span>
+        <span class="pill">ML Engineer (Entry Level)</span>
+        <span class="pill">Malaysia</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Nur Ezy Fathia Edy Safaris • Portfolio</p>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
