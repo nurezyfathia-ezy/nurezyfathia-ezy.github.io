@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==========================================
   const typingElement = document.getElementById("typing");
   if (typingElement) {
-    // Exact Samantha structure: array of roles to cycle through
     const words = [
       "Data Engineer",
       "Data Scientist",
@@ -225,3 +224,61 @@ document.addEventListener("DOMContentLoaded", () => {
       <ul style="padding-left:18px; margin-top:10px; line-height:1.6;">
         <li>Executed Exploratory Data Analysis (EDA), feature engineering with time-series lag variables, and modular preprocessing workflows.</li>
         <li>Visualized predictions and evaluation metrics using Matplotlib, Seaborn, and Tableau dashboards.</li>
+      </ul>
+    `,
+    "pnl-dashboard": `
+      <h3>PnL Financial Dashboard</h3>
+      <p class="tag" style="margin: 8px 0; font-weight:600; color:var(--accent,#4f46e5);">Personal Project | Angular 17 • D3.js • Express.js • PostgreSQL • Knex ORM</p>
+      <hr style="margin:12px 0; opacity:0.2;" />
+      <p>Built a full-stack financial analytics dashboard rendering real-time Profit & Loss (P&L) metrics across operating regions.</p>
+      <ul style="padding-left:18px; margin-top:10px; line-height:1.6;">
+        <li>Designed relational DB schema and developed API routes using Knex ORM.</li>
+        <li>Created custom D3.js interactive visualizations including regional bar charts and margin trend analysis.</li>
+      </ul>
+    `,
+    "elas": `
+      <h3>Employee Learning and Advancement System (ELAS)</h3>
+      <p class="tag" style="margin: 8px 0; font-weight:600; color:var(--accent,#4f46e5);">Developer & Analyst | Final Year Project</p>
+      <hr style="margin:12px 0; opacity:0.2;" />
+      <p>Replaced manual spreadsheet tracking with a centralized web platform, streamlining development records for 100+ employees.</p>
+      <ul style="padding-left:18px; margin-top:10px; line-height:1.6;">
+        <li>Implemented automated logic to calculate Continuing Professional Education (CPE) points, reducing processing time by 80%.</li>
+        <li>Designed 5 interactive dashboards enabling real-time monitoring of training progress, increasing compliance visibility by 95%.</li>
+      </ul>
+    `,
+    "awards": `
+      <h3>Honours & Awards Details</h3>
+      <hr style="margin:12px 0; opacity:0.2;" />
+      <ul style="padding-left:18px; line-height:1.8;">
+        <li><strong>Dean's List Award:</strong> Albukhary International University (2024–2026)</li>
+        <li><strong>Best Projects Poster Award:</strong> Albukhary International University (2023)</li>
+        <li><strong>First Class Honours Dean Scholarship Award (JPA):</strong> Management & Science University (2022)</li>
+        <li><strong>Best Student Award (CS Award):</strong> Management & Science University (2021)</li>
+      </ul>
+    `
+  };
+
+  // Open Modal
+  document.querySelectorAll("[data-modal], [data-award]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const key = btn.getAttribute("data-modal") || btn.getAttribute("data-award");
+      if (modal && modalContent && projectDetails[key]) {
+        modalContent.innerHTML = projectDetails[key];
+        modal.classList.add("active");
+      }
+    });
+  });
+
+  // Close Modal
+  if (modalClose && modal) {
+    modalClose.addEventListener("click", () => {
+      modal.classList.remove("active");
+    });
+
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.remove("active");
+      }
+    });
+  }
+});
