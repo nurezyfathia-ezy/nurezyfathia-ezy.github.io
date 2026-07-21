@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (navToggle && navlinks) {
     navToggle.addEventListener("click", () => {
       navlinks.classList.toggle("open");
-      navlinks.classList.toggle("show"); // Menyokong kedua-dua class responsive anda
+      navlinks.classList.toggle("show");
     });
 
     navlinks.querySelectorAll("a").forEach((link) => {
@@ -49,23 +49,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ==========================================
-  // 4. THEME TOGGLE (DARK / LIGHT MODE) - FIXED!
+  // 4. THEME TOGGLE (DARK / LIGHT MODE)
   // ==========================================
   const themeToggle = document.getElementById("themeToggle");
   const body = document.body;
 
   if (themeToggle) {
     themeToggle.addEventListener("click", () => {
-      // Ditukar ke 'light' supaya sepadan sepenuhnya dengan body.light di style.css
       body.classList.toggle("light");
-      
       const isLight = body.classList.contains("light");
       themeToggle.textContent = isLight ? "☀️" : "🌙";
     });
   }
 
   // ==========================================
-  // 5. TYPING ANIMATION (EXACT SAMANTHA LOGIC)
+  // 5. TYPING ANIMATION
   // ==========================================
   const typingElement = document.getElementById("typing");
   if (typingElement) {
@@ -166,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
   revealCards.forEach((card) => observer.observe(card));
 
   // ==========================================
-  // 9. ABOUT SECTION TOGGLE BOX (Education & Languages)
+  // 9. ABOUT SECTION TOGGLE BOX
   // ==========================================
   const aboutBox = document.getElementById("aboutBox");
   const aboutButtons = document.querySelectorAll("[data-about]");
@@ -203,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ==========================================
-  // 10. PROJECT & AWARD MODAL SYSTEM
+  // 10. PROJECT & AWARD MODAL SYSTEM WITH IMAGES
   // ==========================================
   const modal = document.getElementById("modal");
   const modalContent = document.getElementById("modalContent");
@@ -211,14 +209,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const projectDetails = {
     "rag-chatbot": `
-      <h3>Public Sector FAQ AI Chatbot (PoC)</h3>
+      <h3>FAQ AI Chatbot (PoC)</h3>
       <p class="tag" style="margin: 8px 0; font-weight:600; color:var(--accent,#4f46e5);">Mandrill Tech | Python • LlamaIndex • RAG • Vector Embeddings</p>
       <hr style="margin:12px 0; opacity:0.2;" />
       <p>Built an enterprise Retrieval-Augmented Generation (RAG) chatbot for public sector FAQ dataset queries using LlamaIndex.</p>
-      <ul style="padding-left:18px; margin-top:10px; line-height:1.6;">
+      <ul style="padding-left:18px; margin-top:10px; line-height:1.6; margin-bottom: 20px;">
         <li>Developed vector store index, query engine, and an admin portal with automated email notifications.</li>
         <li>Conducted robustness testing and compiled full PoC technical documentation and proposal specifications.</li>
       </ul>
+      <h4 style="margin-bottom:12px;">Project Screenshots</h4>
+      <div class="modal-gallery">
+        <img src="assets/mtib1.png" alt="FAQ Chatbot interface 1" class="landscape-img" style="border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin-bottom:10px;" />
+        <img src="assets/mtib2.png" alt="FAQ Chatbot interface 2" class="landscape-img" style="border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin-bottom:10px;" />
+        <img src="assets/mtib3.png" alt="FAQ Chatbot interface 3" class="landscape-img" style="border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin-bottom:10px;" />
+        <img src="assets/mtib4.png" alt="FAQ Chatbot interface 4" class="landscape-img" style="border-radius:10px; border:1px solid rgba(255,255,255,0.1);" />
+      </div>
+    `,
+    "encryptify": `
+      <h3>Encryptify (FYP) — Handwritten Text Encryption System</h3>
+      <p class="tag" style="margin: 8px 0; font-weight:600; color:var(--accent,#4f46e5);">Python • OCR • Machine Learning • Cryptography</p>
+      <hr style="margin:12px 0; opacity:0.2;" />
+      <p>Developed a desktop application to securely encrypt and decrypt handwritten text from images.</p>
+      <ul style="padding-left:18px; margin-top:10px; line-height:1.6; margin-bottom: 20px;">
+        <li>Implemented OCR to extract text from handwritten images for processing.</li>
+        <li>Applied machine learning techniques to generate unique encryption keys.</li>
+        <li>Integrated secure authentication using password hashing for user access control.</li>
+        <li>Demonstrated encryption using classical algorithms (Vigenère and Caesar ciphers).</li>
+      </ul>
+      <h4 style="margin-bottom:12px;">Application Interface</h4>
+      <div class="modal-gallery">
+        <img src="assets/encryptify-login.png" alt="Encryptify AuthGuard Login" class="landscape-img" style="border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin-bottom:10px;" />
+        <img src="assets/encryptify-app.png" alt="Encryptify App Interface" class="landscape-img" style="border-radius:10px; border:1px solid rgba(255,255,255,0.1);" />
+      </div>
     `,
     "car-sales": `
       <h3>BMW Car Sales Forecasting (PoC)</h3>
@@ -227,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <p>Built and evaluated multivariate machine learning forecasting models using Python to predict vehicle sales trends from historical data (2010–2024).</p>
       <ul style="padding-left:18px; margin-top:10px; line-height:1.6;">
         <li>Executed Exploratory Data Analysis (EDA), feature engineering with time-series lag variables, and modular preprocessing workflows.</li>
-        <li>Visualized predictions and evaluation metrics using Matplotlib, Seaborn, and Tableau dashboards.</li>
+        <li>Visualized predictions and evaluation metrics across different temporal horizons.</li>
       </ul>
     `,
     "pnl-dashboard": `
@@ -245,10 +267,16 @@ document.addEventListener("DOMContentLoaded", () => {
       <p class="tag" style="margin: 8px 0; font-weight:600; color:var(--accent,#4f46e5);">Developer & Analyst | Final Year Project</p>
       <hr style="margin:12px 0; opacity:0.2;" />
       <p>Replaced manual spreadsheet tracking with a centralized web platform, streamlining development records for 100+ employees.</p>
-      <ul style="padding-left:18px; margin-top:10px; line-height:1.6;">
+      <ul style="padding-left:18px; margin-top:10px; line-height:1.6; margin-bottom: 20px;">
         <li>Implemented automated logic to calculate Continuing Professional Education (CPE) points, reducing processing time by 80%.</li>
         <li>Designed 5 interactive dashboards enabling real-time monitoring of training progress, increasing compliance visibility by 95%.</li>
       </ul>
+      <h4 style="margin-bottom:12px;">System Dashboards</h4>
+      <div class="modal-gallery">
+        <img src="assets/elas1.png" alt="ELAS dashboard view 1" class="landscape-img" style="border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin-bottom:10px;" />
+        <img src="assets/elas2.png" alt="ELAS dashboard view 2" class="landscape-img" style="border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin-bottom:10px;" />
+        <img src="assets/elas3.png" alt="ELAS dashboard view 3" class="landscape-img" style="border-radius:10px; border:1px solid rgba(255,255,255,0.1);" />
+      </div>
     `,
     "awards": `
       <h3>Honours & Awards Details</h3>
@@ -269,7 +297,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (modal && modalContent && projectDetails[key]) {
         modalContent.innerHTML = projectDetails[key];
         modal.classList.add("active");
-        modal.classList.add("show"); // Menyokong .show dan .active untuk keselamatan
+        modal.classList.add("show");
       }
     });
   });
