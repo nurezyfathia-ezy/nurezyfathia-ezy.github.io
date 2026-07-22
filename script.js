@@ -238,8 +238,6 @@ document.addEventListener("DOMContentLoaded", () => {
       </ul>
       <h4 style="margin-bottom:12px;">Application Interface</h4>
       <div class="modal-gallery">
-        <img src="assets/encryptify-login.png" alt="Encryptify AuthGuard Login" class="landscape-img" style="border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin-bottom:10px;" />
-        <img src="assets/encryptify-app.png" alt="Encryptify App Interface" class="landscape-img" style="border-radius:10px; border:1px solid rgba(255,255,255,0.1);" />
       </div>
     `,
     "car-sales": `
