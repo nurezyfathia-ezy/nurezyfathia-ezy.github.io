@@ -253,14 +253,26 @@ document.addEventListener("DOMContentLoaded", () => {
       </ul>
     `,
     "pnl-dashboard": `
-      <h3>PnL Financial Dashboard</h3>
-      <p class="tag" style="margin: 8px 0; font-weight:600; color:var(--accent,#4f46e5);">Personal Project | Angular 17 • D3.js • Express.js • PostgreSQL • Knex ORM</p>
+      <h3>PnL Financial Analytics Dashboard</h3>
+      <p class="tag" style="margin: 8px 0; font-weight:600; color:var(--accent,#4f46e5);">Personal Project | HTML5 • CSS3 • JavaScript • D3.js v7 • GitHub Pages</p>
       <hr style="margin:12px 0; opacity:0.2;" />
-      <p>Built a full-stack financial analytics dashboard rendering real-time Profit & Loss (P&L) metrics across operating regions.</p>
-      <ul style="padding-left:18px; margin-top:10px; line-height:1.6;">
-        <li>Designed relational DB schema and developed API routes using Knex ORM.</li>
-        <li>Created custom D3.js interactive visualizations including regional bar charts and margin trend analysis.</li>
+      <p>Built a serverless, highly interactive financial analytics dashboard rendering real-time Profit & Loss (P&L) metrics across global operating regions.</p>
+      <ul style="padding-left:18px; margin-top:10px; line-height:1.6; margin-bottom: 20px;">
+        <li>Engineered custom D3.js interactive charts (grouped bar graphs for Revenue vs Expenses and line charts for Margin Trends).</li>
+        <li>Implemented client-side dynamic filtering across date ranges, business categories (SaaS vs Services), and regions with real-time aggregation (Monthly vs Quarterly).</li>
+        <li>Integrated automated KPI calculations, structured data tables, and dynamic CSV export capability.</li>
       </ul>
+      <h4 style="margin-bottom:12px;">Dashboard Previews</h4>
+      <div class="modal-gallery">
+        <img src="assets/pnl1.png" alt="PnL Dashboard View 1" class="landscape-img" style="border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin-bottom:10px;" />
+        <img src="assets/pnl2.png" alt="PnL Dashboard View 2" class="landscape-img" style="border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin-bottom:10px;" />
+        <img src="assets/pnl3.png" alt="PnL Dashboard View 3" class="landscape-img" style="border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin-bottom:10px;" />
+      </div>
+      <div style="margin-top:20px;">
+        <a href="https://nurezyfathia-ezy.github.io/pn-dashboard.html/" target="_blank" rel="noreferrer" class="btn btn-primary micro" style="text-decoration:none; display:inline-block;">
+          🚀 Open Live Demo
+        </a>
+      </div>
     `,
     "elas": `
       <h3>Employee Learning and Advancement System (ELAS)</h3>
