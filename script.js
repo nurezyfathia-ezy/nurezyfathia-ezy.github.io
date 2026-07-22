@@ -236,8 +236,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <li>Integrated secure authentication using password hashing for user access control.</li>
         <li>Demonstrated encryption using classical algorithms (Vigenère and Caesar ciphers).</li>
       </ul>
-      <h4 style="margin-bottom:12px;">Application Interface</h4>
-      <div class="modal-gallery">
+      
       </div>
     `,
     "car-sales": `
